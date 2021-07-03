@@ -15,7 +15,87 @@ html {
     --verde:#C4E538;
     --azul:#0652DD;
     --naranja:#EE5A24;
-    --lavanda:#D980FA;
+    --lavanda:#e8e8e4;
     --negro:#000000;
     --blanco:#ffffff;
+}
+
+h1{
+    font-family: var(--fuentePpal);
+    font-weight: 900;
+}
+
+.titulo{        text-align: center; }
+.header{        padding-top: 3rem;}
+.navegacion{
+    background-color: var(--verde);
+    margin: 3rem 0;
+    padding: 0.5rem;
+
+}
+
+.navegacion a{
+    padding: 2rem;
+    color: var(--naranja);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: var(--fuentePpal);
+}
+.navegacion a:hover{
+    background-color: var(--naranja);
+    color: var(--blanco);
+}
+
+img{
+    max-width: 100%;
+}
+
+.slider img{    width: 100%;}
+.entrada p{    text-align: justify;}
+
+.informacion{
+    background-color: var(--lavanda);
+    color: var(--naranja);
+}
+
+.informacion p{
+    margin: 0 0 .5rem 0;
+    padding: 1rem;
+    text-align: center;
+}
+.imagenUno,
+.imagenDos{
+    text-align: center;
+}
+
+blockquote{
+    font-size: 1.4rem;
+    text-align: center;
+    font-style: var(--fuentePpal);
+    font-style: italic;
+    color: var(--azul);
+}
+
+.footer{
+    background-color: var(--verde);
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.footer a{
+    display: block;
+    color: var(--negro);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom:  0.5rem;
+}
+
+.copyright{
+    color: var(--blanco);
+    background-color: var(--naranja);
+    margin: 3rem 0 0 0;
+    padding: 1rem;
+    text-align: center;
 }
