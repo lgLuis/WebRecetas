@@ -30,7 +30,7 @@ h1{
 .navegacion{
     background-color: var(--verde);
     margin: 3rem 0;
-    padding: 0.5rem;
+
 
 }
 
@@ -98,4 +98,38 @@ blockquote{
     margin: 3rem 0 0 0;
     padding: 1rem;
     text-align: center;
+}
+
+/**/
+
+.navegacion nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+@media(min-width:768px){
+    .contenido-ppal{
+        display: grid;
+        grid-template-columns: minmax(100px, max-content) auto minmax(100px, max-content);
+        grid-template-rows: repeat(4, auto);
+    }
+    .titulo{
+        grid-column: 1/4;
+    }
+    .informacion{
+        grid-row: 2/3;
+    }
+    .imagenUno{
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
+    .imagenDos{
+        grid-row: 4/5;
+
+    }
+    .entrada{
+        grid-column: 2/3;
+        grid-row: 2/5;
+
+    }
+
 }
