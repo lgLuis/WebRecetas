@@ -1,0 +1,21 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root{
+    --fuentePpal: 'Quicksand', sans-serif;
+    --verde:#C4E538;
+    --azul:#0652DD;
+    --naranja:#EE5A24;
+    --lavanda:#D980FA;
+    --negro:#000000;
+    --blanco:#ffffff;
+}
