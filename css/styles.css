@@ -19,6 +19,12 @@ html {
     --negro:#000000;
     --blanco:#ffffff;
 }
+body{   background-color: var(--lavanda);}
+
+.contenedor{
+    max-width: 110rem;
+    margin: 0 auto;
+}
 
 h1{
     font-family: var(--fuentePpal);
@@ -26,21 +32,31 @@ h1{
 }
 
 .titulo{        text-align: center; }
-.header{        padding-top: 3rem;}
+.header{
+    padding-top: 3rem;
+    background-color: var(--lavanda);
+    text-align: center;
+    color: var(--verde);
+    text-shadow: 2px 2px var(--lavanda);
+}
+
+.header:hover{
+    color: var(--naranja);
+    text-shadow: 2px 2px var(--verde);
+
+}
 .navegacion{
     background-color: var(--verde);
-    margin: 3rem 0;
-
-
+    margin: 2rem 0;
 }
 
 .navegacion a{
-    padding: 2rem;
+    padding: 1rem;
     color: var(--naranja);
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: var(--fuentePpal);
 }
 .navegacion a:hover{
@@ -53,20 +69,27 @@ img{
 }
 
 .slider img{    width: 100%;}
-.entrada p{    text-align: justify;}
+.entrada p{    
+    text-align: justify;
+    margin: 1rem;
+    font-size: 1.4rem;
+}
 
 .informacion{
     background-color: var(--lavanda);
     color: var(--naranja);
+    border: 1px solid var(--naranja);
 }
 
 .informacion p{
     margin: 0 0 .5rem 0;
     padding: 1rem;
     text-align: center;
+    font-size: 1.6rem;
 }
 .imagenUno,
 .imagenDos{
+    max-width: 25rem;
     text-align: center;
 }
 
@@ -111,6 +134,7 @@ blockquote{
         display: grid;
         grid-template-columns: minmax(100px, max-content) auto minmax(100px, max-content);
         grid-template-rows: repeat(4, auto);
+        gap: 1rem;
     }
     .titulo{
         grid-column: 1/4;
@@ -131,5 +155,10 @@ blockquote{
         grid-row: 2/5;
 
     }
+}
 
+
+.footer .contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
